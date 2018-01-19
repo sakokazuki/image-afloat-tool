@@ -46,35 +46,35 @@ ImageAfloatTool(config);
 
 #### toggle all
 
-key: g
+key: g  
 モジュールごと全部消す。
 
 #### toggle gui
 
-key: i
+key: i  
 GUIを隠す。
 
 #### toggle key shortcut
 
-key: u
+key: u  
 キーコントロールをオフ/オンにする。
 
 #### offsetX
 
-key: h -=1
-key: l +=1
+key: h -=1  
+key: l +=1  
 画像のx位置を変更する。
 
 #### offsetY
 
-key: k -=1
-key: j +=1
+key: k -=1  
+key: j +=1  
 画像のy位置を変更する。
 
 #### opacity
 
-key: a -=0.05
-key: s +=0.05
+key: a -=0.05  
+key: s +=0.05  
 画像のopacityを変更する。
 
 ## Config Settings
@@ -117,7 +117,7 @@ watch dev server [localhost:3333](localhost:3000)
 yarn build
 ```
 
-`lib/image-float-tool.min.js`はimportして使えるようにしたビルド
+`lib/image-float-tool.min.js`はimportして使えるようにしたビルド  
 `lib/image-float-tool.pkg.min.js`はscriptタグで読んで使えるようにするビルド
 
 `docs/`以下に最新のファイルがコピーされる(github pagesのデモ用)
