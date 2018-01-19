@@ -1,0 +1,9 @@
+export default {
+    MOVE: 'MOVE',
+    OPACITY: 'OPACITY',
+    SHOW: 'SHOW',
+    SHOW_GUI: 'SHOW_GUI',
+    KEY_CONTROL: 'KEY_CONTROL',
+    RESTORE_STATUS: 'RESTORE_STATUS',
+    CHANGE_IMAGE: 'CHANGE_IMAGE',
+}
