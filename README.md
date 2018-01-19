@@ -40,19 +40,42 @@ const config = {
 ImageAfloatTool(config);
 ```
 
-### dev
+### demo
+
+[demo](https://sakokazuki.github.io/image-afloat-tool/)
 
 #### toggle all
 
+key: g
+モジュールごと全部消す。
+
 #### toggle gui
+
+key: i
+GUIを隠す。
 
 #### toggle key shortcut
 
+key: u
+キーコントロールをオフ/オンにする。
+
 #### offsetX
+
+key: h -=1
+key: l +=1
+画像のx位置を変更する。
 
 #### offsetY
 
+key: k -=1
+key: j +=1
+画像のy位置を変更する。
+
 #### opacity
+
+key: a -=0.05
+key: s +=0.05
+画像のopacityを変更する。
 
 ## Config Settings
 
@@ -65,6 +88,8 @@ ImageAfloatTool(config);
 ```
 
 ## development
+
+yarn使ってます。npmでも可だと思う。
 
 ### clone
 
@@ -84,4 +109,20 @@ and
 yarn watch
 ```
 
-watch dev server `localhost:3333`
+watch dev server [localhost:3333](localhost:3000)
+
+### build
+
+```
+yarn build
+```
+
+`lib/image-float-tool.min.js`はimportして使えるようにしたビルド
+`lib/image-float-tool.pkg.min.js`はscriptタグで読んで使えるようにするビルド
+
+`docs/`以下に最新のファイルがコピーされる(github pagesのデモ用)
+
+### todo
+
+- なんだか重いのなんとかする
+-
