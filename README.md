@@ -109,7 +109,7 @@ and
 yarn watch
 ```
 
-watch dev server [localhost:3333](localhost:3000)
+watch dev server [localhost:3000](http://localhost:3000/)
 
 ### build
 
