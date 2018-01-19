@@ -6,9 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "NODE_ENV=\"dev_pkg\" node_modules/webpack-dev-server/bin/webpack-dev-server.js",
-    "build": "npm run bulid_package && npm run bulid_lib",
-    "bulid_package": "NODE_ENV=\"production_pkg\" node_modules/webpack/bin/webpack.js",
-    "bulid_lib": "NODE_ENV=\"production\" node_modules/webpack/bin/webpack.js"
+    "build": "npm run build_package && npm run build_lib && npm run docs",
+    "build_package": "NODE_ENV=\"production_pkg\" node_modules/webpack/bin/webpack.js",
+    "build_lib": "NODE_ENV=\"production\" node_modules/webpack/bin/webpack.js",
+    "docs": "cp dev/index.html docs/ && cp -r dev/img/ docs/img/ && cp lib/image-afloat-tool-pkg.min.js docs/"
   },
   "author": "",
   "license": "ISC",
