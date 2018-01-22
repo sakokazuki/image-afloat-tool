@@ -1,25 +1,24 @@
 {
   "name": "image-afloat-tool",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "NODE_ENV=\"dev_pkg\" node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "build": "npm run build_package && npm run build_lib && npm run docs",
-    "build_package": "NODE_ENV=\"production_pkg\" node_modules/webpack/bin/webpack.js",
+    "build_package": "NODE_ENV=\"production_pkg_min\" node_modules/webpack/bin/webpack.js",
     "build_lib": "NODE_ENV=\"production\" node_modules/webpack/bin/webpack.js",
     "docs": "cp dev/index.html docs/ && cp -r dev/img/ docs/img/ && cp lib/image-afloat-tool-pkg.min.js docs/"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "sako kazuki",
+  "license": "MIT",
+  "repository" : { 
+    "type" : "git", 
+    "url" : "https://github.com/sakokazuki/image-afloat-tool"
+  },
   "dependencies": {
-    "js-cookie": "^2.2.0",
-    "material-ui": "^0.20.0",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-redux": "^5.0.6",
-    "wolfy87-eventemitter": "^5.2.4"
+    
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
@@ -29,13 +28,19 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-3": "^6.24.1",
     "css-loader": "^0.28.9",
+    "js-cookie": "^2.2.0",
+    "material-ui": "^0.20.0",
     "path": "^0.12.7",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
     "redux": "^3.7.2",
     "style-loader": "^0.19.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
     "uglifyjs-webpack-plugin": "^1.1.6",
     "webpack": "^3.10.0",
-    "webpack-dev-server": "^2.11.0"
+    "webpack-dev-server": "^2.11.0",
+    "wolfy87-eventemitter": "^5.2.4"
   }
 }

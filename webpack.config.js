@@ -3,9 +3,9 @@ const path = require("path")
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
 const libTarget = process.env.NODE_ENV.indexOf('pkg') !== -1 ? 'var' : 'commonjs2'
-const filename = process.env.NODE_ENV.indexOf('pkg') !== -1 ? 'image-afloat-tool-pkg.min.js' : 'image-afloat-tool.min.js'
+const filename = process.env.NODE_ENV.indexOf('pkg') !== -1 ? 'image-afloat-tool-pkg.min.js' : 'image-afloat-tool.js'
 const output = process.env.NODE_ENV.indexOf('production') !== -1 ? '/lib' : '/dev'
-const plugins = process.env.NODE_ENV.indexOf('production') !== -1 ? [new UglifyJsPlugin()] : []
+const plugins = process.env.NODE_ENV.indexOf('min') !== -1 ? [new UglifyJsPlugin()] : []
 
 module.exports = {
   context: __dirname + '/dev',
